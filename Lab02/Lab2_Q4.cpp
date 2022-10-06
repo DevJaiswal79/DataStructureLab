@@ -1,22 +1,26 @@
-//WAP to multiply two numbers by using addition.
-#include<iostream>
+// WAP to multiply two numbers by using addition.
+#include <iostream>
 using namespace std;
-int main(){
-    int a,b;
-cout<<"enter two num to multiply: ";
-    cin>>a>>b;
-    int mi,ma;
-    if(a>b){
+int main()
+{
+    int a, b;
+    cout << "enter two num to multiply: ";
+    cin >> a >> b;
+    int mi, ma;
+    if (a > b)
+    {
         mi = b;
         ma = a;
     }
-    else{
+    else
+    {
         mi = a;
         ma = b;
     }
     long int ans = 0;
-    for(int i=1 ; i<=mi ;++i){
+    for (int i = 1; i <= mi; ++i)
+    {
         ans = ans + ma;
     }
-    cout<<ans<<endl;
+    cout << ans << endl;
 }
